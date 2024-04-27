@@ -6,18 +6,14 @@ using UnityEngine.UI;
 
 public class Load : MonoBehaviour
 {
-    private void Start()
-    {
-        gameObject.SetActive(true);
-    }
     private void Update()
     {
-        StartCoroutine(LoadScene(5f));
+        StartCoroutine(LoadScene(2.5f));
     }
 
     IEnumerator LoadScene(float delaytime)
     {
         yield return new WaitForSeconds(delaytime);
-        gameObject.SetActive(false);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(3);
     }
 }
