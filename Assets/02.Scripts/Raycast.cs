@@ -19,6 +19,7 @@ public class Raycast : MonoBehaviour
         rigid = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         player = GetComponent<PlayerMove>();
+
     }
     private void Update()
     {
@@ -31,18 +32,21 @@ public class Raycast : MonoBehaviour
             if (hit.collider.gameObject.tag == "Buttom")
             {
                 canHit = false;
+                player.catMove = false;
                 StartCoroutine(DelayHit(0.1f));
                 transform.rotation = Quaternion.Euler(0, 0, -40);
-                rigid.gravityScale = 50;
+                rigid.gravityScale = 1.5f;
                 anim.SetBool("HileRun", true);
 
             }
             else
             {
+                player.catMove = true;
                 canHit = false;
                 StartCoroutine(DelayHit(0.01f));
                 transform.rotation = Quaternion.Euler(0, 0, 0);
                 anim.SetBool("HileRun", false);
+
             }
         }
     }

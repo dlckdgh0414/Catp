@@ -7,9 +7,12 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     public static UIManager Instance;
-    float Time1;
+    Rigidbody2D rigid;
+    float Speed = 5f;
+    
     private void Awake()
     {
+        rigid = GetComponent<Rigidbody2D>();
         gameObject.SetActive(false);
         if(Instance != null)
         {
@@ -19,14 +22,12 @@ public class UIManager : MonoBehaviour
     }
    public void OnClik()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(2);
-        if(Time1==5)
-        {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(3);
-        }
+        Time.timeScale = 1;
+        StartCoroutine(delay(2));
     }
-    private void FixedUpdate()
+    IEnumerator delay(float delayTime)
     {
-        Time1 += Time.fixedDeltaTime;
+        yield return new WaitForSeconds(delayTime);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(2);
     }
 }
