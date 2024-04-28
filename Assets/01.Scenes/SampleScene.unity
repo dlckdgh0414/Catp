@@ -511,7 +511,7 @@ Transform:
   m_GameObject: {fileID: 300937757}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.63, y: -6.49, z: 0}
+  m_LocalPosition: {x: -4.9, y: -4.3, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -570,6 +570,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   move: {x: 0, y: 0}
+  catMove: 1
+  x: 0
 --- !u!114 &300937768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -627,7 +629,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 300937757}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: deaeed5e777d9f64a966a449762077d4, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -7656,7 +7658,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.63, y: -3.9899998, z: -10}
+  m_LocalPosition: {x: -4.9, y: -1.8000002, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8182,7 +8184,7 @@ Transform:
   m_GameObject: {fileID: 1103591646}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.63, y: -3.9899998, z: -10}
+  m_LocalPosition: {x: -4.9, y: -1.8000002, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8238,9 +8240,9 @@ MonoBehaviour:
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
+  m_XDamping: 0
+  m_YDamping: 0
+  m_ZDamping: 0
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
   m_ScreenY: 0.5

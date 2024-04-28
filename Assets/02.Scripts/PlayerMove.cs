@@ -14,9 +14,9 @@ public class PlayerMove : MonoBehaviour
     public float x;
     private void Awake()
     {
-        anim = GetComponent<Animator>();
-        rigid = GetComponent<Rigidbody2D>();
-        sprit = GetComponent<SpriteRenderer>();
+        anim = GetComponents<Animator>();
+        rigid = GetComponents<Rigidbody2D>();
+        sprit = GetComponents<SpriteRenderer>();
     }
     void Start()
     {

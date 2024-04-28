@@ -5,22 +5,22 @@ using UnityEngine;
 public class PlayerRub : MonoBehaviour
 {
     Animator anim;
-    PlayerMove player;
+    PlayerMove pleyer;
     private void Awake()
     {
         anim = GetComponent<Animator>();
-        player = GetComponent<PlayerMove>();
+        pleyer = GetComponent<PlayerMove>();
     }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            player.speed += 5f;
+            pleyer.speed += 5f;
             anim.SetBool("Run", true);
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            player.speed = 5f;
+            pleyer.speed = 5f;
             anim.SetBool("Run", false);
         }
     }
