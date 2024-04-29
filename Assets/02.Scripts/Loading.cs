@@ -6,6 +6,14 @@ using UnityEngine.UI;
 
 public class Load : MonoBehaviour
 {
-    protected static Load instance;
-   
+    private void Update()
+    {
+        StartCoroutine(LoadScene(2.5f));
+    }
+
+    IEnumerator LoadScene(float delaytime)
+    {
+        yield return new WaitForSeconds(delaytime);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(3);
+    }
 }
