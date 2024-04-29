@@ -22,7 +22,7 @@ public class PlayerMove : MonoBehaviour
     {
         
     }
-    void Update()
+    void FixedUpdate()
     {
             Move();
         
@@ -32,7 +32,7 @@ public class PlayerMove : MonoBehaviour
     {
         x = Input.GetAxisRaw("Horizontal");
 
-        move = new Vector2(x, 0f).normalized * speed;
+        move = new Vector2(x * speed, rigid.velocity.y);
         rigid.velocity = move;
         anim.SetBool(walkHash, move.magnitude > 0);
         if (move.x > 0)

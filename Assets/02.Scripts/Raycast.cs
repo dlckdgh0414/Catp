@@ -24,11 +24,17 @@ public class Raycast : MonoBehaviour
     }
     private void Update()
     {
+        Ray();
+    }
+
+    private void Ray()
+    {
         Debug.DrawRay(rigid.position, Vector3.down, new Color(0, 1, 0), 0.3f);
         hit = Physics2D.Raycast(rigid.position, Vector3.down, 3f, 1 << 3);
 
         if (canHit)
         {
+            if (hit.collider == null) return;
             Debug.Log(hit.collider.name);
             if (hit.collider.gameObject.tag == "Buttom")
             {
@@ -36,7 +42,6 @@ public class Raycast : MonoBehaviour
                 player.catMove = false;
                 StartCoroutine(DelayHit(0.1f));
                 transform.rotation = Quaternion.Euler(0, 0, -40);
-                rigid.gravityScale = 1.5f;
                 anim.SetBool("HileRun", true);
 
             }
