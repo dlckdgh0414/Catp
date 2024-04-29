@@ -10,7 +10,7 @@ public class Raycast : MonoBehaviour
     int Distance = 2;
     Rigidbody2D rigid;
     [SerializeField] private LayerMask whatIsBottom;
-    public Animator anim;
+    private Animator anim;
     PlayerMove player;
 
     private bool canHit = true;
@@ -33,9 +33,10 @@ public class Raycast : MonoBehaviour
             if (hit.collider.gameObject.tag == "Buttom")
             {
                 canHit = false;
+                player.catMove = false;
                 StartCoroutine(DelayHit(0.1f));
-                transform.rotation = Quaternion.Euler(0,0,-40);
-                rigid.gravityScale = 50;
+                transform.rotation = Quaternion.Euler(0, 0, -40);
+                rigid.gravityScale = 1.5f;
                 anim.SetBool("HileRun", true);
 
             }
