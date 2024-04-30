@@ -39,17 +39,17 @@ public class Raycast : MonoBehaviour
             if (hit.collider.gameObject.tag == "Buttom")
             {
                 canHit = false;
-                player.catMove = false;
                 StartCoroutine(DelayHit(0.1f));
                 transform.rotation = Quaternion.Euler(0, 0, -40);
+                rigid.gravityScale = 1.5f;
                 anim.SetBool("HileRun", true);
 
             }
             else
             {
-                player.catMove = true;
                 canHit = false;
                 StartCoroutine(DelayHit(0.01f));
+                rigid.gravityScale = 5f;
                 transform.rotation = Quaternion.Euler(0, 0, 0);
                 anim.SetBool("HileRun", false);
 
