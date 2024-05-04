@@ -21,7 +21,7 @@ public class CatFoot : MonoBehaviour
     }
     IEnumerator catMove()
     {
-        catFoot.transform.DOMove(new Vector3(-8.5f, 0, 0), 1f);
+        catFoot.transform.DOMove(new Vector3(-9f, 0, 0), 1f);
         yield return new WaitForSeconds(1.5f);
         catFoot.transform.DOMove(new Vector3(-20, 0, 0), 1f);
         UI.transform.DOMove(new Vector3(-20, 0, 0), 1f);
