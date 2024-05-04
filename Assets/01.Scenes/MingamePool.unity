@@ -155,6 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   catFoot: {fileID: 17267047}
   UI: {fileID: 765210319}
+  UI1: {fileID: 0}
   CatFootLeft: {fileID: 17267047}
 --- !u!212 &17267049
 SpriteRenderer:
@@ -257,8 +258,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 413}
-  m_SizeDelta: {x: 669.9367, y: 145.3045}
+  m_AnchoredPosition: {x: -46, y: 327}
+  m_SizeDelta: {x: 669.94, y: 150.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &30060009
 MonoBehaviour:
@@ -413,7 +414,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 823.22864, y: -833}
+  m_AnchoredPosition: {x: 816, y: -609}
   m_SizeDelta: {x: 278.5657, y: 275.9343}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &308778417
@@ -568,7 +569,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0
   far clip plane: 1000
   field of view: 60
   orthographic: 1
@@ -597,7 +598,7 @@ Transform:
   m_GameObject: {fileID: 470032638}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -787,7 +788,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.102}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -810, y: -833}
+  m_AnchoredPosition: {x: -821, y: -627}
   m_SizeDelta: {x: 278.5657, y: 275.9343}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &554731584
@@ -916,10 +917,10 @@ RectTransform:
   - {fileID: 765210320}
   m_Father: {fileID: 1995599473}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: -1820, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &609465608
 SpriteRenderer:
@@ -1077,7 +1078,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765210319}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1088,8 +1089,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.21, y: 1.93}
-  m_SizeDelta: {x: 1923.44, y: 1005.99}
+  m_AnchoredPosition: {x: -1.83, y: -3.68}
+  m_SizeDelta: {x: 1917.39, y: 1054.58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &765210321
 MonoBehaviour:
@@ -1152,7 +1153,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 803429337}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1164,7 +1165,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.004959, y: 208.0025}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &813301740
@@ -1201,7 +1202,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -20.9281, y: -33.3622}
+  m_AnchoredPosition: {x: 54, y: -71}
   m_SizeDelta: {x: 1444.148, y: 335.5832}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &813301742
@@ -1281,7 +1282,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -512.77057, y: 289.99808}
+  m_AnchoredPosition: {x: -437.24, y: 165.04}
   m_SizeDelta: {x: 874.4775, y: 136.5045}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &816380338
@@ -1361,7 +1362,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.102}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -817, y: -365}
+  m_AnchoredPosition: {x: -812, y: -316}
   m_SizeDelta: {x: 278.5657, y: 275.9343}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &943513122
@@ -1529,7 +1530,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14.47, y: -211.84}
+  m_AnchoredPosition: {x: -0.00000095367, y: -0.000045776}
   m_SizeDelta: {x: 1954.96, y: 1061.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1296885366
@@ -1604,7 +1605,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000076294, y: 176}
+  m_AnchoredPosition: {x: -4, y: 305}
   m_SizeDelta: {x: 589.41, y: 227.83}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1439856232
@@ -1748,9 +1749,9 @@ RectTransform:
   m_Father: {fileID: 1995599473}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 960, y: 500.32}
-  m_SizeDelta: {x: 1920, y: 1000.6}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 500.32}
+  m_SizeDelta: {x: 0, y: 1000.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1473905805
 SpriteRenderer:
@@ -1918,7 +1919,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 821, y: -365}
+  m_AnchoredPosition: {x: 823, y: -323}
   m_SizeDelta: {x: 278.5657, y: 275.9343}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1767094388
@@ -2217,6 +2218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   catFoot: {fileID: 2048118208}
   UI: {fileID: 765210319}
+  UI1: {fileID: 803429337}
   CatFootLeft: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
