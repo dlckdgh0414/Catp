@@ -18,4 +18,12 @@ public class CatFollow : MonoBehaviour
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = new Vector3(mousePos.x, mousePos.y, 0);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Fish"))
+        {
+            Destroy(collision.gameObject);
+        }
+    }
 }

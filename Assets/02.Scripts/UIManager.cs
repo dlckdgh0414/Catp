@@ -6,12 +6,9 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public static UIManager Instance;
-    Rigidbody2D rigid;
-    float Speed = 5f;
 
     private void Awake()
-    {
-        rigid = GetComponent<Rigidbody2D>();
+    { 
         gameObject.SetActive(false);
         if (Instance != null)
         {

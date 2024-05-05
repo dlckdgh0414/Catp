@@ -5,7 +5,7 @@ using UnityEngine;
 public class LeftFish : MonoBehaviour
 {
     Rigidbody2D rigid;
-    float Speed = 2f;
+    float Speed = 4.5f;
     private void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
