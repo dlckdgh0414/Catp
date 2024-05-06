@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 171954006}
   - component: {fileID: 171954007}
+  - component: {fileID: 171954008}
   m_Layer: 0
   m_Name: LeftManager
   m_TagString: Untagged
@@ -177,6 +178,23 @@ MonoBehaviour:
   - {fileID: 1601813250235549903, guid: b1b96f34994717746aa405bab161d2b8, type: 3}
   - {fileID: 8568504191585072083, guid: 2bc7ddffc316b2e4a85a7ca9db97c80e, type: 3}
   - {fileID: 820810933353444795, guid: 024a293b181b8594f86db058952d9f43, type: 3}
+--- !u!114 &171954008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171954005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 957857a9a37f9d44a973cd79f292b3d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Trash:
+  - {fileID: 5443004632715553130, guid: c7e1687f5a5c8804ea9be3771b70e4c7, type: 3}
+  - {fileID: 6794488326937744566, guid: 59c2281d657076a4c838ad36d025dc4e, type: 3}
+  currentTime: 0
+  creatTime: 4.5
 --- !u!1 &226894169
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,6 +323,7 @@ GameObject:
   m_Component:
   - component: {fileID: 316994295}
   - component: {fileID: 316994294}
+  - component: {fileID: 316994296}
   m_Layer: 0
   m_Name: RightManager
   m_TagString: Untagged
@@ -348,6 +367,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &316994296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316994293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 957857a9a37f9d44a973cd79f292b3d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Trash:
+  - {fileID: 5443004632715553130, guid: c7e1687f5a5c8804ea9be3771b70e4c7, type: 3}
+  - {fileID: 5806370589662159868, guid: 18a5e0377bab5cc4eaa0516edfadcecf, type: 3}
+  - {fileID: 6891469725185331027, guid: 3627947602a2f9046ac9ce285bd64b3b, type: 3}
+  currentTime: 0
+  creatTime: 1.5
 --- !u!1 &336777179
 GameObject:
   m_ObjectHideFlags: 0
@@ -3203,6 +3240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 625622224}
   - component: {fileID: 625622223}
+  - component: {fileID: 625622225}
   m_Layer: 0
   m_Name: LeftManager
   m_TagString: Untagged
@@ -3247,6 +3285,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &625622225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625622222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 957857a9a37f9d44a973cd79f292b3d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Trash:
+  - {fileID: 5443004632715553130, guid: c7e1687f5a5c8804ea9be3771b70e4c7, type: 3}
+  - {fileID: 6794488326937744566, guid: 59c2281d657076a4c838ad36d025dc4e, type: 3}
+  currentTime: 0
+  creatTime: 2
 --- !u!1 &670701385
 GameObject:
   m_ObjectHideFlags: 0
@@ -3481,6 +3536,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1040471310}
   - component: {fileID: 1040471311}
+  - component: {fileID: 1040471312}
   m_Layer: 0
   m_Name: RightManager
   m_TagString: Untagged
@@ -3524,6 +3580,23 @@ MonoBehaviour:
   - {fileID: 325814775267664863, guid: 80f52ea9fe517d54399dddc97080c967, type: 3}
   - {fileID: 7248533566614366519, guid: 7bf5a284fc2241e4ebad8f3055dd755c, type: 3}
   - {fileID: 7793513197804521409, guid: 4afe838965803b64b8f9a76512487c31, type: 3}
+--- !u!114 &1040471312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040471309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 957857a9a37f9d44a973cd79f292b3d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Trash:
+  - {fileID: 6891469725185331027, guid: 3627947602a2f9046ac9ce285bd64b3b, type: 3}
+  - {fileID: 5806370589662159868, guid: 18a5e0377bab5cc4eaa0516edfadcecf, type: 3}
+  currentTime: 0
+  creatTime: 3
 --- !u!1 &1120953176
 GameObject:
   m_ObjectHideFlags: 0
@@ -3534,6 +3607,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1120953178}
   - component: {fileID: 1120953177}
+  - component: {fileID: 1120953179}
   m_Layer: 0
   m_Name: RightManager
   m_TagString: Untagged
@@ -3577,6 +3651,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1120953179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120953176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 957857a9a37f9d44a973cd79f292b3d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Trash:
+  - {fileID: 5806370589662159868, guid: 18a5e0377bab5cc4eaa0516edfadcecf, type: 3}
+  - {fileID: 6891469725185331027, guid: 3627947602a2f9046ac9ce285bd64b3b, type: 3}
+  currentTime: 0
+  creatTime: 4.5
 --- !u!1 &1420911136
 GameObject:
   m_ObjectHideFlags: 0
@@ -3632,6 +3723,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1473591869}
   - component: {fileID: 1473591868}
+  - component: {fileID: 1473591870}
   m_Layer: 0
   m_Name: LeftManager
   m_TagString: Untagged
@@ -3676,6 +3768,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1473591870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473591867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 957857a9a37f9d44a973cd79f292b3d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Trash:
+  - {fileID: 5443004632715553130, guid: c7e1687f5a5c8804ea9be3771b70e4c7, type: 3}
+  - {fileID: 6794488326937744566, guid: 59c2281d657076a4c838ad36d025dc4e, type: 3}
+  currentTime: 0
+  creatTime: 1
 --- !u!1 &1500786721
 GameObject:
   m_ObjectHideFlags: 0

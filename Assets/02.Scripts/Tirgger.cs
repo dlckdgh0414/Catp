@@ -10,8 +10,7 @@ public class Tirgger : MonoBehaviour
         if(collision.gameObject.name == "Player")
         {
             UI.SetActive(true);
-            Time.timeScale = 0;
-            
+            Time.timeScale = 0; 
         }
     }
 }

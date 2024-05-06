@@ -25,5 +25,9 @@ public class CatFollow : MonoBehaviour
         {
             Destroy(collision.gameObject);
         }
+        else if(collision.gameObject.CompareTag("Trash"))
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }
