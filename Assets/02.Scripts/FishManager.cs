@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//창호는 씹게이
 public class FishManager : MonoBehaviour
 {
     [SerializeField] private float currentTime;
@@ -22,3 +22,4 @@ public class FishManager : MonoBehaviour
         currentTime += Time.fixedDeltaTime;
     }
 }
+

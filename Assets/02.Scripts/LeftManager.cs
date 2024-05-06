@@ -8,6 +8,7 @@ public class LeftManager : MonoBehaviour
    [SerializeField] private float creatTime = 2f;
     public GameObject[] FishPrefab;
 
+    //창호는 씹게이
     private void Update()
     {
         if(creatTime<currentTime)
