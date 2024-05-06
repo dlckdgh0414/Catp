@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class CatFollow : MonoBehaviour
 {
+    private Guge G;
     private void Awake()
     {
         Vector2 mousePos = Input.mousePosition;
+        G = GetComponent<Guge>();
     }
     private void Update()
     {
@@ -24,6 +26,7 @@ public class CatFollow : MonoBehaviour
         if (collision.gameObject.CompareTag("Fish"))
         {
             Destroy(collision.gameObject);
+            
         }
         else if(collision.gameObject.CompareTag("Trash"))
         {
