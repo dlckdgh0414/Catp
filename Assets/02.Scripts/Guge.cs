@@ -5,5 +5,5 @@ using UnityEngine.UI;
 
 public class Guge : MonoBehaviour
 {
-   
+    [SerializeField] GameObject G;  
 }
