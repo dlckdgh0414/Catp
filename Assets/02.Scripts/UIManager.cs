@@ -16,39 +16,19 @@ public class UIManager : MonoBehaviour
         }
         Instance = this;
     }
-    public void OnClik()
+    public void OnClik(int sceneNum)
     {
         Time.timeScale = 1;
-        StartCoroutine(delay(2));
-    }
-    public void OtherOnClik()
-    {
-        Time.timeScale = 1;
-        StartCoroutine(delay1(2));
-    }
-    public void YesClik()
-    {
-        Time.timeScale = 1;
-        StartCoroutine(dlay2(2));
+        StartCoroutine(delay(2,sceneNum));
     }
     public void NoClik()
     {
         gameObject.SetActive(false);
         Time.timeScale = 1;
     }
-    IEnumerator delay(float delayTime)
+    IEnumerator delay(float delayTime, int sceneNum)
     {
         yield return new WaitForSeconds(delayTime);
-        UnityEngine.SceneManagement.SceneManager.LoadScene(2);
-    }
-    IEnumerator delay1(float delayTime)
-    {
-        yield return new WaitForSeconds(delayTime);
-        UnityEngine.SceneManagement.SceneManager.LoadScene(3);
-    }
-    IEnumerator dlay2(float delayTime)
-    {
-        yield return new WaitForSeconds(delayTime);
-        UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneNum);
     }
 }
