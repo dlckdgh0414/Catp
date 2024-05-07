@@ -1,18 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
-public class Player : MonoBehaviour
+public class PlayerDotween : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] GameObject Player;
+    private void Update()   
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Player.transform.DOMove(new Vector3(6.6f, -6.61f, 0), 15);
     }
 }

@@ -4113,7 +4113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 937c92e20cfa65247bd4394405476a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  G: {fileID: 1832785922}
+  Size: {fileID: 0}
   x: 0
 --- !u!1 &1832785921
 GameObject:
@@ -4173,10 +4173,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0

@@ -24,4 +24,9 @@ public class PlayerRub : MonoBehaviour
             anim.SetBool("Run", false);
         }
     }
+
+    IEnumerator delay()
+    {
+        yield return new WaitForSeconds(2f);
+    }
 }
