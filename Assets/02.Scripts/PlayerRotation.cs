@@ -5,9 +5,17 @@ using DG.Tweening;
 
 public class PlayerDotween : MonoBehaviour
 {
-    [SerializeField] GameObject Player;
-    private void Update()   
+    RaycastHit2D Hille;
+    private bool HilleHiet;
+    [SerializeField] Transform drawLineObject;
+
+    private void OnDrawGizmos()
     {
-        Player.transform.DOMove(new Vector3(6.6f, -6.61f, 0), 15);
+        DrawRay();
+    }
+    private void DrawRay()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(drawLineObject.position,drawLineObject.position+Vector3.down*2);
     }
 }
