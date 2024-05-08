@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Tirgger : MonoBehaviour
 {
+    [SerializeField] GameObject UI;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.name == "Player")
         {
-            UIManager.Instance.gameObject.SetActive(true);
-            Time.timeScale = 0;
-            
+            UI.SetActive(true);
+            Time.timeScale = 0; 
         }
     }
 }

@@ -12,7 +12,7 @@ public class Raycast : MonoBehaviour
     [SerializeField] private LayerMask whatIsBottom;
     private Animator anim;
     PlayerMove player;
-
+    //창호는 씹게이
     private bool canHit = true;
 
     private void Awake()
@@ -52,7 +52,7 @@ public class Raycast : MonoBehaviour
                 rigid.gravityScale = 5f;
                 transform.rotation = Quaternion.Euler(0, 0, 0);
                 anim.SetBool("HileRun", false);
-
+                //창호는 씹게이
             }
         }
     }
